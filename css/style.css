@@ -721,6 +721,96 @@ p {
     line-height: 1.6;
 }
 
+/* --- Skills extras (qualites, langues, outils) --- */
+.skills-extras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.skills-extra-block {
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+}
+
+.skills-extra-block h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+}
+
+.skills-extra-block li {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin-bottom: 0.3rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.skills-extra-block li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-bar);
+    border-radius: 50%;
+}
+
+/* --- Certifications --- */
+.certifications-grid {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.certification-item {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--color-border);
+    align-items: center;
+}
+
+.certification-item:last-child {
+    border-bottom: none;
+}
+
+.certification-year {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-accent-dark);
+}
+
+.certification-name {
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.certification-org {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .skills-extras {
+        grid-template-columns: 1fr;
+    }
+    .certification-item {
+        grid-template-columns: 70px 1fr;
+    }
+    .certification-org {
+        grid-column: 2;
+        text-align: left;
+    }
+}
+
 /* --- Projects --- */
 .projects-grid {
     display: grid;
@@ -823,16 +913,22 @@ p {
 
 /* --- Contact --- */
 .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .contact-info-item {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 0;
 }
 
 .contact-info-icon {
