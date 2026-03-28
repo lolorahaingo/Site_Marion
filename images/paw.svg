@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#3a3530">
-  <!-- 4 toe pads -->
-  <ellipse cx="30" cy="25" rx="10" ry="13" transform="rotate(-15 30 25)"/>
-  <ellipse cx="50" cy="15" rx="9" ry="12"/>
-  <ellipse cx="70" cy="15" rx="9" ry="12"/>
-  <ellipse cx="85" cy="30" rx="8" ry="12" transform="rotate(20 85 30)"/>
-  <!-- Main pad -->
-  <path d="M25 55 Q22 45 28 40 Q38 35 48 38 Q52 35 58 38 Q68 35 75 42 Q80 48 76 58 Q72 72 65 80 Q58 87 52 88 Q46 87 38 80 Q30 72 25 55Z"/>
-</svg>
