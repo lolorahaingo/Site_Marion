@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="wheat-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c8a96e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ddc99a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leaf-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a7c59;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b9e7a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bread-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c8a96e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5e3c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Bread / Baguette shape -->
+  <ellipse cx="55" cy="60" rx="38" ry="28" fill="url(#bread-gradient)" />
+  <!-- Bread scoring lines -->
+  <path d="M35 50 Q55 46 72 50" stroke="#a07840" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M32 58 Q55 54 76 58" stroke="#a07840" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M35 66 Q55 62 72 66" stroke="#a07840" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Wheat stalk left -->
+  <g transform="translate(18, 18) rotate(-20, 20, 40)">
+    <!-- Stem -->
+    <line x1="20" y1="10" x2="20" y2="55" stroke="#6b9e7a" stroke-width="2" stroke-linecap="round"/>
+    <!-- Grains left -->
+    <ellipse cx="14" cy="14" rx="5" ry="3" fill="url(#wheat-gradient)" transform="rotate(-30, 14, 14)"/>
+    <ellipse cx="14" cy="23" rx="5" ry="3" fill="url(#wheat-gradient)" transform="rotate(-30, 14, 23)"/>
+    <ellipse cx="14" cy="32" rx="5" ry="3" fill="url(#wheat-gradient)" transform="rotate(-30, 14, 32)"/>
+    <!-- Grains right -->
+    <ellipse cx="26" cy="14" rx="5" ry="3" fill="url(#wheat-gradient)" transform="rotate(30, 26, 14)"/>
+    <ellipse cx="26" cy="23" rx="5" ry="3" fill="url(#wheat-gradient)" transform="rotate(30, 26, 23)"/>
+    <ellipse cx="26" cy="32" rx="5" ry="3" fill="url(#wheat-gradient)" transform="rotate(30, 26, 32)"/>
+    <!-- Top grain -->
+    <ellipse cx="20" cy="8" rx="3" ry="5" fill="url(#wheat-gradient)"/>
+  </g>
+
+  <!-- Wheat stalk right -->
+  <g transform="translate(68, 18) rotate(20, 20, 40)">
+    <!-- Stem -->
+    <line x1="20" y1="10" x2="20" y2="55" stroke="#6b9e7a" stroke-width="2" stroke-linecap="round"/>
+    <!-- Grains left -->
+    <ellipse cx="14" cy="14" rx="5" ry="3" fill="url(#wheat-gradient)" transform="rotate(-30, 14, 14)"/>
+    <ellipse cx="14" cy="23" rx="5" ry="3" fill="url(#wheat-gradient)" transform="rotate(-30, 14, 23)"/>
+    <ellipse cx="14" cy="32" rx="5" ry="3" fill="url(#wheat-gradient)" transform="rotate(-30, 14, 32)"/>
+    <!-- Grains right -->
+    <ellipse cx="26" cy="14" rx="5" ry="3" fill="url(#wheat-gradient)" transform="rotate(30, 26, 14)"/>
+    <ellipse cx="26" cy="23" rx="5" ry="3" fill="url(#wheat-gradient)" transform="rotate(30, 26, 23)"/>
+    <ellipse cx="26" cy="32" rx="5" ry="3" fill="url(#wheat-gradient)" transform="rotate(30, 26, 32)"/>
+    <!-- Top grain -->
+    <ellipse cx="20" cy="8" rx="3" ry="5" fill="url(#wheat-gradient)"/>
+  </g>
+
+  <!-- Small leaf accent -->
+  <path d="M55 88 Q48 82 52 74 Q56 82 55 88 Z" fill="url(#leaf-gradient)" opacity="0.8"/>
+  <path d="M55 88 Q62 82 58 74 Q54 82 55 88 Z" fill="url(#leaf-gradient)" opacity="0.6"/>
+
+  <!-- Text: Laurent -->
+  <text x="120" y="55" font-family="Georgia, 'Playfair Display', serif" font-size="38" font-weight="700" fill="#3a3a3a" letter-spacing="2">
+    Laurent
+  </text>
+
+  <!-- Text: Boulangerie Artisanale Bio -->
+  <text x="120" y="78" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#4a7c59" letter-spacing="4" text-transform="uppercase">
+    BOULANGERIE ARTISANALE
+  </text>
+
+  <!-- Bio badge -->
+  <rect x="120" y="88" width="50" height="18" rx="9" fill="#4a7c59" opacity="0.1" stroke="#4a7c59" stroke-width="1"/>
+  <text x="131" y="101" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" fill="#4a7c59">
+    BIO
+  </text>
+  <!-- Small leaf in badge -->
+  <circle cx="152" cy="97" r="1.5" fill="#4a7c59"/>
+  <path d="M154 97 Q157 93 160 97 Q157 95 154 97 Z" fill="#4a7c59"/>
+</svg>
